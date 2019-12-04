@@ -10,5 +10,22 @@ import { Component } from '@angular/core';
   }`]
 })
 export class AppComponent {
+  username = '';
+  //tempName = '';
+  allowDisply = false;
+
+/*   onUpdateUsername() {
+    //event : Event
+    //console.log( event );
+    //this.tempName =  (<HTMLInputElement>event.target).value;
+
+    if( this.username != ''){
+        this.allowDisply = true;        
+    }
+  }
+
+  onDeleteBtn(){
+    this.username = '';
+  } */
   
 }
