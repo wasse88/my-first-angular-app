@@ -3,16 +3,18 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  //styleUrls: ['./app.component.css']
-  styles: [`
-  h3{
-    color: dodgerblue;
-  }`]
+  styleUrls: ['./app.component.css']
+/*   styles: [`
+  h3{ color: dodgerblue;},
+  .clickColor{ color: 'white' }
+  `] */
 })
 export class AppComponent {
   username = '';
   //tempName = '';
   allowDisply = false;
+  numberOfClicks =  0;
+  arrayOfClaicks = [];
 
 /*   onUpdateUsername() {
     //event : Event
@@ -28,4 +30,10 @@ export class AppComponent {
     this.username = '';
   } */
   
+  onDisplay(){
+    this.allowDisply = true;
+    //this.arrayOfClaicks.push(this.numberOfClicks++);
+    this.arrayOfClaicks.push(new Date());
+
+  }
 }
